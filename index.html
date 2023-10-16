@@ -4,99 +4,149 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./css/main.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
   <title>Document</title>
 </head>
-<body>
-  <div class="grid grid-cols-6 grid-rows-1 grid-flow-row mt-[200px] ml-[20%] w-[70%]">
-    <div class="bg-red-100">#</div>
-    <div class="bg-red-100">Patient Name</div>
-    <div class="bg-red-100">Patient ID</div>
-    <div class="bg-red-100">Sponsor's Name</div>
-    <div class="bg-red-100">Sponsor's Work ID</div>
-    <div class="bg-red-100">Amount</div>
-    <div>1</div>
-    <div class="hover:font-bold h-10 flex items-center"><a href="#">John Doe</a></div>
-    <div class="h-10 flex items-center">CH007</div>
-    <div class="h-10 flex items-center">John Doe</div>
-    <div class="h-10 flex items-center">123456789</div>
-    <div class="h-10 flex items-center">100</div>
-    <div>1</div>
-    <div class="hover:font-bold h-10 flex items-center"><a href="#">John Doe</a></div>
-    <div class="h-10 flex items-center">CH007</div>
-    <div class="h-10 flex items-center">John Doe</div>
-    <div class="h-10 flex items-center">123456789</div>
-    <div class="h-10 flex items-center">100</div>
-    <div>1</div>
-    <div class="hover:font-bold h-10 flex items-center"><a href="#">John Doe</a></div>
-    <div class="h-10 flex items-center">CH007</div>
-    <div class="h-10 flex items-center">John Doe</div>
-    <div class="h-10 flex items-center">123456789</div>
-    <div class="h-10 flex items-center">100</div>
-    <div>1</div>
-    <div class="hover:font-bold h-10 flex items-center"><a href="#">John Doe</a></div>
-    <div class="h-10 flex items-center">CH007</div>
-    <div class="h-10 flex items-center">John Doe</div>
-    <div class="h-10 flex items-center">123456789</div>
-    <div class="h-10 flex items-center">100</div>
-    <div>1</div>
-    <div class="hover:font-bold h-10 flex items-center"><a href="#">John Doe</a></div>
-    <div class="h-10 flex items-center">CH007</div>
-    <div class="h-10 flex items-center">John Doe</div>
-    <div class="h-10 flex items-center">123456789</div>
-    <div class="h-10 flex items-center">100</div>
-    <div>1</div>
-    <div class="hover:font-bold h-10 flex items-center"><a href="#">John Doe</a></div>
-    <div class="h-10 flex items-center">CH007</div>
-    <div class="h-10 flex items-center">John Doe</div>
-    <div class="h-10 flex items-center">123456789</div>
-    <div class="h-10 flex items-center">100</div>
-    <div>1</div>
-    <div class="hover:font-bold h-10 flex items-center"><a href="#">John Doe</a></div>
-    <div class="h-10 flex items-center">CH007</div>
-    <div class="h-10 flex items-center">John Doe</div>
-    <div class="h-10 flex items-center">123456789</div>
-    <div class="h-10 flex items-center">100</div>
-    <div>1</div>
-    <div class="hover:font-bold h-10 flex items-center"><a href="#">John Doe</a></div>
-    <div class="h-10 flex items-center">CH007</div>
-    <div class="h-10 flex items-center">John Doe</div>
-    <div class="h-10 flex items-center">123456789</div>
-    <div class="h-10 flex items-center">100</div>
-    <div>1</div>
-    <div class="hover:font-bold h-10 flex items-center"><a href="#">John Doe</a></div>
-    <div class="h-10 flex items-center">CH007</div>
-    <div class="h-10 flex items-center">John Doe</div>
-    <div class="h-10 flex items-center">123456789</div>
-    <div class="h-10 flex items-center">100</div>
-    <div>1</div>
-    <div class="hover:font-bold h-10 flex items-center"><a href="#">John Doe</a></div>
-    <div class="h-10 flex items-center">CH007</div>
-    <div class="h-10 flex items-center">John Doe</div>
-    <div class="h-10 flex items-center">123456789</div>
-    <div class="h-10 flex items-center">100</div>
-    <div>1</div>
-    <div class="hover:font-bold h-10 flex items-center"><a href="#">John Doe</a></div>
-    <div class="h-10 flex items-center">CH007</div>
-    <div class="h-10 flex items-center">John Doe</div>
-    <div class="h-10 flex items-center">123456789</div>
-    <div class="h-10 flex items-center">100</div>
-    <div>1</div>
-    <div class="hover:font-bold h-10 flex items-center"><a href="#">John Doe</a></div>
-    <div class="h-10 flex items-center">CH007</div>
-    <div class="h-10 flex items-center">John Doe</div>
-    <div class="h-10 flex items-center">123456789</div>
-    <div class="h-10 flex items-center">100</div>
+<body class="min-w-[750px] overflow-x-scroll">
+  <div class="md:ml-[17%] md:w-[80%] border-t border-color-gray-line mt-[70px] pt-[25px]">
+    <h1 class="text-[30px] font-semibold">Invoices</h1>
+    <div class="flex justify-between mt-[30px]">
+      <div class="flex flex-col bg-color-ligth-blue rounded-lg w-[32%] pl-3 py-3">
+        <span class="text-[15px] text-color-gray-text">paid</span>
+        <span class="text-[30px] font-semibold">$10250</span>
+        <span class="text-[15px] text-color-gray-text">This week</span>
+      </div>
+      <div class="flex flex-col bg-color-ligth-blue rounded-lg w-[32%] pl-3 py-3">
+        <span class="text-[15px] text-color-gray-text">paid</span>
+        <span class="text-[30px] font-semibold">$10250</span>
+        <span class="text-[15px] text-color-gray-text">This week</span>
+      </div>
+      <div class="flex flex-col bg-color-ligth-blue rounded-lg w-[32%] pl-3 py-3">
+        <span class="text-[15px] text-color-gray-text">paid</span>
+        <span class="text-[30px] font-semibold">$10250</span>
+        <span class="text-[15px] text-color-gray-text">This week</span>
+      </div>
+    </div>
   </div>
-  <div class="hidden">
-    <div>attribute1</div>
-    <div>attribute2</div>
-    <div>attribute3</div>
-    <div>attribute4</div>
-    <div>attribute5</div>
-    <div>attribute6</div>
-    <div>attribute7</div>
-    <div>attribute8</div>
-    <div>attribute9</div>
+  <div class="grid grid-cols-6 grid-rows-1 grid-flow-row mt-[40px] md:ml-[17%] md:w-[80%] border rounded-lg p-5">
+    <div class="bg-color-light-red text-color-gray-text font-semibold text-[16px] pl-5">#</div>
+    <div class="bg-color-light-red text-color-gray-text font-semibold pl-5">Patient Name</div>
+    <div class="bg-color-light-red text-color-gray-text font-semibold pl-5">Patient ID</div>
+    <div class="bg-color-light-red text-color-gray-text font-semibold pl-5">Sponsor's Name</div>
+    <div class="bg-color-light-red text-color-gray-text font-semibold pl-5">Sponsor's Work ID</div>
+    <div class="bg-color-light-red text-color-gray-text font-semibold pl-5">Amount</div>
+
+    <div class="h-10 flex items-center pl-5 border-b border-color-gray-line">1</div>
+    <div class="font-semibold h-10 flex items-center hover:underline pl-5 border-b border-color-gray-line"><a href="#">John Doe</a></div>
+    <div class="h-10 flex items-center pl-5 border-b border-color-gray-line">CH007</div>
+    <div class="h-10 flex items-center pl-5 border-b border-color-gray-line">John Doe</div>
+    <div class="h-10 flex items-center pl-5 border-b border-color-gray-line">123456789</div>
+    <div class="h-10 flex items-center pl-5 border-b border-color-gray-line">100</div>
+
+    <div class="h-10 flex items-center pl-5 border-b border-color-gray-line">1</div>
+    <div class="font-semibold h-10 flex items-center hover:underline pl-5 border-b border-color-gray-line"><a href="#">John Doe</a></div>
+    <div class="h-10 flex items-center pl-5 border-b border-color-gray-line">CH007</div>
+    <div class="h-10 flex items-center pl-5 border-b border-color-gray-line">John Doe</div>
+    <div class="h-10 flex items-center pl-5 border-b border-color-gray-line">123456789</div>
+    <div class="h-10 flex items-center pl-5 border-b border-color-gray-line">100</div>
+
+    <div class="h-10 flex items-center pl-5 border-b border-color-gray-line">1</div>
+    <div class="font-semibold h-10 flex items-center hover:underline pl-5 border-b border-color-gray-line"><a href="#">John Doe</a></div>
+    <div class="h-10 flex items-center pl-5 border-b border-color-gray-line">CH007</div>
+    <div class="h-10 flex items-center pl-5 border-b border-color-gray-line">John Doe</div>
+    <div class="h-10 flex items-center pl-5 border-b border-color-gray-line">123456789</div>
+    <div class="h-10 flex items-center pl-5 border-b border-color-gray-line">100</div>
+
+    <div class="h-10 flex items-center pl-5 border-b border-color-gray-line">1</div>
+    <div class="font-semibold h-10 flex items-center hover:underline pl-5 border-b border-color-gray-line"><a href="#">John Doe</a></div>
+    <div class="h-10 flex items-center pl-5 border-b border-color-gray-line">CH007</div>
+    <div class="h-10 flex items-center pl-5 border-b border-color-gray-line">John Doe</div>
+    <div class="h-10 flex items-center pl-5 border-b border-color-gray-line">123456789</div>
+    <div class="h-10 flex items-center pl-5 border-b border-color-gray-line">100</div>
+
+    <div class="h-10 flex items-center pl-5 border-b border-color-gray-line">1</div>
+    <div class="font-semibold h-10 flex items-center hover:underline pl-5 border-b border-color-gray-line"><a href="#">John Doe</a></div>
+    <div class="h-10 flex items-center pl-5 border-b border-color-gray-line">CH007</div>
+    <div class="h-10 flex items-center pl-5 border-b border-color-gray-line">John Doe</div>
+    <div class="h-10 flex items-center pl-5 border-b border-color-gray-line">123456789</div>
+    <div class="h-10 flex items-center pl-5 border-b border-color-gray-line">100</div>
+
+    <div class="h-10 flex items-center pl-5 border-b border-color-gray-line">1</div>
+    <div class="font-semibold h-10 flex items-center hover:underline pl-5 border-b border-color-gray-line"><a href="#">John Doe</a></div>
+    <div class="h-10 flex items-center pl-5 border-b border-color-gray-line">CH007</div>
+    <div class="h-10 flex items-center pl-5 border-b border-color-gray-line">John Doe</div>
+    <div class="h-10 flex items-center pl-5 border-b border-color-gray-line">123456789</div>
+    <div class="h-10 flex items-center pl-5 border-b border-color-gray-line">100</div>
+
+    <div class="h-10 flex items-center pl-5 border-b border-color-gray-line">1</div>
+    <div class="font-semibold h-10 flex items-center hover:underline pl-5 border-b border-color-gray-line"><a href="#">John Doe</a></div>
+    <div class="h-10 flex items-center pl-5 border-b border-color-gray-line">CH007</div>
+    <div class="h-10 flex items-center pl-5 border-b border-color-gray-line">John Doe</div>
+    <div class="h-10 flex items-center pl-5 border-b border-color-gray-line">123456789</div>
+    <div class="h-10 flex items-center pl-5 border-b border-color-gray-line">100</div>
+
+    <div class="h-10 flex items-center pl-5">1</div>
+    <div class="font-semibold h-10 flex items-center hover:underline pl-5"><a href="#">John Doe</a></div>
+    <div class="h-10 flex items-center pl-5 ">CH007</div>
+    <div class="h-10 flex items-center pl-5 ">John Doe</div>
+    <div class="h-10 flex items-center pl-5">123456789</div>
+    <div class="h-10 flex items-center pl-5">100</div>
+  </div>
+  <div class=" fixed top-0 w-full h-screen hidden">
+    <div class="border border-black w-[60%] bg-black"></div>
+    <div class="w-[40%] flex justify-center items-center">
+      <div class="w-[60%] flex flex-col justify-center">
+        <h1 class="text-[25px] font-semibold text-center">Invoice - #001</h1>
+        <div class="flex flex-col gap-3 mt-[20px]">
+          <div class="bg-color-light-red flex flex-col py-1 pl-3">
+            <span class="text-[12px] text-color-gray-text">patient's Name</span>
+            <span class="text-[15px]">John Doe</span>
+          </div>
+  
+          <div class="bg-color-light-red flex flex-col py-1 pl-3">
+            <span class="text-[12px] text-color-gray-text">patient's Name</span>
+            <span class="text-[15px]">John Doe</span>
+          </div>
+  
+          <div class="bg-color-light-red flex flex-col py-1 pl-3">
+            <span class="text-[12px] text-color-gray-text">patient's Name</span>
+            <span class="text-[15px]">John Doe</span>
+          </div>
+  
+          <div class="bg-color-light-red flex flex-col py-1 pl-3">
+            <span class="text-[12px] text-color-gray-text">patient's Name</span>
+            <span class="text-[15px]">John Doe</span>
+          </div>
+  
+          <div class="bg-color-light-red flex flex-col py-1 pl-3">
+            <span class="text-[12px] text-color-gray-text">patient's Name</span>
+            <span class="text-[15px]">John Doe</span>
+          </div>
+  
+          <div class="bg-color-light-red flex flex-col py-1 pl-3">
+            <span class="text-[12px] text-color-gray-text">patient's Name</span>
+            <span class="text-[15px]">John Doe</span>
+          </div>
+  
+          <div class="bg-color-light-red flex flex-col py-1 pl-3">
+            <span class="text-[12px] text-color-gray-text">patient's Name</span>
+            <span class="text-[15px]">John Doe</span>
+          </div>
+  
+          <div class="bg-color-light-red flex flex-col py-1 pl-3">
+            <span class="text-[12px] text-color-gray-text">patient's Name</span>
+            <span class="text-[15px]">John Doe</span>
+          </div>
+  
+          <div class="bg-color-light-red flex flex-col py-1 pl-3">
+            <span class="text-[12px] text-color-gray-text">patient's Name</span>
+            <span class="text-[15px]">John Doe</span>
+          </div>
+        </div>
+        <button class="bg-color-ligth-blue text-color-text-blue mt-3 rounded-lg py-1">Donwload invoice</button>
+      </div>
+    </div>
   </div>
 </body>
 </html>
